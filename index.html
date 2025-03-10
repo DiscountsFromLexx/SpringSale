@@ -643,10 +643,10 @@
         const theme = window.Telegram.WebApp.colorScheme; // Отримуємо тему
         const textColor = theme === "dark" ? "white" : "black"; // Визначаємо колір тексту
         
-        document.documentElement.style.setProperty("--text-color", textColor); // Змінюємо CSS-змінну
+        document.documentElement.style.setProperty("--text-color", textColor); // Змінюємо змінну в CSS
     }
 
     // Викликаємо функцію при завантаженні
     window.Telegram.WebApp.onEvent("themeChanged", applyTheme);
-    applyTheme(); // Викликаємо відразу після запуску
+    applyTheme(); // Викликаємо одразу після завантаження
 </script>
